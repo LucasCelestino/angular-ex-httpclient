@@ -1,0 +1,31 @@
+<header class="home-header">
+  <p>Nome: Lucas Celestino</p>
+  <p>RA: 0050832011020</p>
+</header>
+<div class="att-bitcoin">
+  <h2>Atualizações do Bitcoin</h2>
+  <button (click)="updateBitcoinRates()">Atualizar</button>
+</div>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Data/Hora</th>
+      <th>USD</th>
+      <th>EUR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rate of this.bitCoinService.list">
+      <td>{{ rate.time.updated }}</td>
+      <td>{{ rate.bpi.USD.rate_float }}</td>
+      <td>{{ rate.bpi.EUR.rate_float }}</td>
+    </tr>
+  </tbody>
+</table>
+<h2 class="temp-title">Temporizador</h2>
+<div>
+  <button type="submit" (click)="startTemporizador()">Iniciar</button>
+  <button type="submit" (click)="stopTemporizador()">Parar</button>
+  <button type="submit" (click)="resetTemporizador()">Reiniciar</button>
+</div>
+<p>{{ temporizador.getCount() }}</p>

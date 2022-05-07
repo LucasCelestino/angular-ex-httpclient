@@ -1,0 +1,9 @@
+* {
+  text-decoration: none;
+  color: inherit !important;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu-link {
+  color: rgb(212, 47, 47) !important;
+}

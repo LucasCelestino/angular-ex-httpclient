@@ -1,0 +1,20 @@
+<div class="taxas">
+  <h2>Taxas do Bitcoin BRL e USD</h2>
+  <button (click)="updatebitcoinBRLTaxas()">Atualizar</button>
+</div>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Data/Hora</th>
+      <th>USD</th>
+      <th>BRL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rate of this.bitcoinBRLService.list">
+      <td>{{ rate.time.updated }}</td>
+      <td>$ {{ rate.bpi.USD.rate_float }}</td>
+      <td>R$ {{ rate.bpi.BRL.rate_float }}</td>
+    </tr>
+  </tbody>
+</table>

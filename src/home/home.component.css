@@ -1,0 +1,22 @@
+.home-header {
+  display: flex;
+  color: rgb(212, 47, 47) !important;
+}
+
+.home-header p {
+  margin-right: 10px;
+}
+
+.att-bitcoin {
+  display: flex;
+  align-items: center;
+}
+
+.att-bitcoin h2 {
+  margin-right: 10px;
+  color: rgb(212, 47, 47) !important;
+}
+
+.temp-title {
+  color: rgb(212, 47, 47) !important;
+}

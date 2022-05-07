@@ -1,0 +1,9 @@
+.taxas {
+  display: flex;
+  align-items: center;
+}
+
+.taxas h2 {
+  margin-right: 10px;
+  color: rgb(212, 47, 47) !important;
+}
